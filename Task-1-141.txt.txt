@@ -1,0 +1,21 @@
+<inventorySystem class>, <Violation of SRP> The inventorySystem class have too many resposibilities,
+
+<inventorySystem class>, <Violation of OCP>, Extending this class will be very messy and complicated.
+ 
+<globalInventoryData class>, <Global state usage>, Heavy reliance on the globalInventoryData class without proper encapsulation
+
+<inventorySystem class line 77 - 99>, <Hard coded values>, For discounting hard coded values were used. Named constants are more preferable.
+
+<inventorySystem class line 23 - 37>, <Nested class usage>, The OrderItem class is deeply nested within Order, which is nested within inventorySystem.
+
+<Product, Order, OrderItem class>, <Class Design Issues>, Product, Order, and OrderItem are inner classes of inventorySystem, making them tightly coupled and reducing reusability.
+
+<inventorySystem class line 41 - 72>, <Reduced code readability>, Too many conditional statements reduces code redability and understanding.
+
+<inventorySystem class line 10 - 37>, <Lack of encapsulation>, Public fields in Product, Order, and OrderItem expose internal state, violating encapsulation.
+
+<inventorySystem class line 41 - 72, 132 - 155>, <Long method>, addProduct and processOrder method is so long that it's hard to understand the method functionality and it's hard to refactor also.
+
+
+
+
